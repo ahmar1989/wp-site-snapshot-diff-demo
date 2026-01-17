@@ -26,7 +26,7 @@ class WPSD_Snapshot_Collector
     }
 
     /**
-     * Get WordPress-related data.
+     * WordPress data.
      *
      * @return array
      */
@@ -41,7 +41,7 @@ class WPSD_Snapshot_Collector
     }
 
     /**
-     * Get PHP-related data.
+     * PHP data.
      *
      * @return array
      */
@@ -54,7 +54,7 @@ class WPSD_Snapshot_Collector
     }
 
     /**
-     * Get active theme data.
+     * Active theme data.
      *
      * @return array
      */
@@ -70,7 +70,7 @@ class WPSD_Snapshot_Collector
     }
 
     /**
-     * Get plugin counts.
+     * Plugin counts.
      *
      * @return array
      */
@@ -95,7 +95,7 @@ class WPSD_Snapshot_Collector
     }
 
     /**
-     * Get cron-related data.
+     * Cron-related data.
      *
      * @return array
      */
