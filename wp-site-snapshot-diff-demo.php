@@ -41,3 +41,15 @@ function wpsd_init()
     $plugin->init();
 }
 add_action('plugins_loaded', 'wpsd_init');
+add_action('init', function () {
+    if (isset($_GET['wpsd_test']) && current_user_can('manage_options')) {
+
+        $collector = new WPSD_Snapshot_Collector();
+        $snapshot  = $collector->collect();
+
+        echo '<pre>';
+        print_r($snapshot);
+        echo '</pre>';
+        exit;
+    }
+});
